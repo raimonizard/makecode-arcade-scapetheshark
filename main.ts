@@ -69,8 +69,8 @@ mySprite.setScale(0.5, ScaleAnchor.Middle)
 controller.moveSprite(mySprite, 30, 30)
 mySprite.setBounceOnWall(true)
 mySprite.sayText("Go!")
-game.splash("Scape the shark!")
-game.splash("Use A to shoot fish!")
+game.splash("Scape the sharks", "Move with the arrows")
+game.splash("Use A to shoot fish", "Use B to shrink")
 myEnemy.follow(mySprite, randint(1, 10))
 forever(function () {
     if (SharkLifes <= 0) {
