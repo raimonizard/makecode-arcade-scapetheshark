@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.17/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.2.0","target":"arcade","targetVersion":"1.12.17","repo":"raimonizard/scapetheshark-makecode-arcade"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.17/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"1.1.1","target":"arcade","targetVersion":"1.12.17","repo":"raimonizard/scapetheshark-makecode-arcade"}
 // total=2162331 new=6.37% cached=88.70% other=4.93%
 (function (ectx) {
 'use strict';
@@ -621,7 +621,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P27653(s) {
+function _main___P27682(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1289,13 +1289,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P27653.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P27653.continuations = [  ]
+_main___P27682.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P27682.continuations = [  ]
 
-function _main___P27653_mk(s) {
+function _main___P27682_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P27653, depth: s.depth + 1,
+        parent: s, fn: _main___P27682, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -73013,5 +73013,5 @@ const effects_SceneAnchor__C5266_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___4315","mySprite___4311","mySprite2___4309","SharkLifes___4312","myEnemy___4310"])
 
-return _main___P27653
+return _main___P27682
 })
