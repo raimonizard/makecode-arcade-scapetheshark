@@ -1,3 +1,6 @@
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    mySprite.scale += -0.1
+})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     sprites.destroyAllSpritesOfKind(SpriteKind.Projectile, effects.ashes, 200)
     mySprite2 = sprites.createProjectileFromSprite(assets.image`Fish1`, mySprite, mySprite.vx, mySprite.vy)
@@ -24,6 +27,9 @@ info.onLifeZero(function () {
     mySprite.destroy()
     game.setGameOverMessage(false, "The shark got you!")
 })
+controller.B.onEvent(ControllerButtonEvent.Released, function () {
+    mySprite.scale += 0.1
+})
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite2, otherSprite2) {
     SharkLifes += -1
     info.changeScoreBy(100)
@@ -44,7 +50,7 @@ let mySprite2: Sprite = null
 let myEnemy: Sprite = null
 let mySprite: Sprite = null
 scene.cameraFollowSprite(mySprite)
-music.play(music.stringPlayable("E B C5 A B G A F ", 200), music.PlaybackMode.LoopingInBackground)
+music.play(music.stringPlayable("C5 C C5 D B D A E ", 200), music.PlaybackMode.LoopingInBackground)
 info.setLife(3)
 music.setVolume(100)
 scene.setBackgroundImage(assets.image`Earth`)
