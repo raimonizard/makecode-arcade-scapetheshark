@@ -1,7 +1,7 @@
  
 
 
-> Open this page at [https://raimonizard.github.io/scapetheshark-makecode-arcade/](https://raimonizard.github.io/scapetheshark-makecode-arcade/)
+> Open this page at [https://raimonizard.github.io/makecode-arcade-scapetheshark/](https://raimonizard.github.io/makecode-arcade-scapetheshark/)
 
 ## Use as Extension
 
